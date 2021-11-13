@@ -18,6 +18,7 @@ alert(data[0]['country'][2]);
 addElement("wrap");
 //LISTENERS
 
+document.getElementById("autor").addEventListener("click", author); 
 document.getElementById("graj").addEventListener("click", Sprawdz_Litery); 
 alert(game.zycia);
 
@@ -50,4 +51,8 @@ function getRandomInt(min, max) {
   min = Math.ceil(min);
   max = Math.floor(max);
   return Math.floor(Math.random() * (max - min)) + min;
+}
+
+function author(){
+  alert ("Autor: Maciej Morawski Indeks: 209399");
 }
